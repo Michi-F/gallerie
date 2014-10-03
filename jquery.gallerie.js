@@ -453,8 +453,8 @@ Released under MIT LICENSE
 						$('body').css({ overflow: 'hidden' });
 						
 						// resize imagebox to fill void not filled by captionBox and thumbBox
+						$overlay.css("height", $(window).height());
 						$imageBox.css({height: $overlay.height() - $captionBox.outerHeight() - $thumbBox.outerHeight() - parseInt($imageBox.css('margin-bottom'), 10) - parseInt($imageBox.css('margin-top'), 10)});
-						
 					}
 				
 					$overlay.fadeIn(500, function(){
